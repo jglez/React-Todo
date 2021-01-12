@@ -31,3 +31,5 @@ const data = [
     completed: false
   }
 ]
+
+export default data
