@@ -1,4 +1,5 @@
 import React from 'react'
+import TodoForm from './components/TodoForm.js'
 import Todo from './components/Todo.js'
 import './components/Todo.css'
 
@@ -9,7 +10,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Welcome to your Todo App!</h1>
+        <h1>Second Brain</h1>
+        <TodoForm />
         <Todo />
       </div>
     )
