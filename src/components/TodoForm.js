@@ -1,13 +1,6 @@
 import React from 'react'
 
 class TodoForm extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      task: ''
-    }
-  }
-
   handleClick = (evt) => {
     console.log(evt.target.value)
   }
@@ -17,16 +10,20 @@ class TodoForm extends React.Component {
 
     return (
       <>
-        <label>New task:&nbsp;
-          <input
-            name='task'
-            type='text'
-            value={initialFormValue}
-            onChange={this.handleClick}
-          />
-        </label>&nbsp;
+        <form>
+          <label>New Task:&nbsp;
+            <input
+              name='task'
+              type='text'
+              value={initialFormValue}
+              onChange={this.handleClick}
+              placeholder='Cool task'
+            />
+          </label>&nbsp;
 
-        <button>Add Task</button>
+          <button>Add</button>
+
+        </form>
       </>
     )
   }
